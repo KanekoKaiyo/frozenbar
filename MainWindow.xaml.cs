@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,7 @@ namespace hackaton
         public MainWindow()
         {
             InitializeComponent();
-
+            playBGSong();
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
@@ -194,8 +195,10 @@ namespace hackaton
                 }
             }
         }
-        private void playSong() {
-           
+        private void playBGSong() {
+           SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
+           playSound.Play();
+           playSound.PlayLooping();
         }
     }
 }

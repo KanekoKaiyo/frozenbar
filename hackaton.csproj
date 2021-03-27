@@ -6,4 +6,68 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="song\270302__littlerobotsoundfactory__collect-point-02.wav" />
+    <None Remove="song\270303__littlerobotsoundfactory__collect-point-01 - Copy.wav" />
+    <None Remove="song\270304__littlerobotsoundfactory__collect-point-00 - Copy.wav" />
+    <None Remove="song\270305__littlerobotsoundfactory__climb-rope-loop-00 - Copy.wav" />
+    <None Remove="song\270306__littlerobotsoundfactory__explosion-02 - Copy.wav" />
+    <None Remove="song\270307__littlerobotsoundfactory__explosion-01 - Copy.wav" />
+    <None Remove="song\270308__littlerobotsoundfactory__explosion-00 - Copy.wav" />
+    <None Remove="song\270309__littlerobotsoundfactory__craft-00 - Copy.wav" />
+    <None Remove="song\270310__littlerobotsoundfactory__explosion-04 - Copy.wav" />
+    <None Remove="song\270311__littlerobotsoundfactory__explosion-03 - Copy.wav" />
+    <None Remove="song\270315__littlerobotsoundfactory__menu-navigate-03 - Copy.wav" />
+    <None Remove="song\270316__littlerobotsoundfactory__open-00 - Copy.wav" />
+    <None Remove="song\270317__littlerobotsoundfactory__jump-01 - Copy.wav" />
+    <None Remove="song\270318__littlerobotsoundfactory__jump-02 - Copy.wav" />
+    <None Remove="song\270320__littlerobotsoundfactory__jump-00.wav" />
+    <None Remove="song\270321__littlerobotsoundfactory__menu-navigate-01.wav" />
+    <None Remove="song\270322__littlerobotsoundfactory__menu-navigate-02.wav" />
+    <None Remove="song\270323__littlerobotsoundfactory__jump-03.wav" />
+    <None Remove="song\270324__littlerobotsoundfactory__menu-navigate-00.wav" />
+    <None Remove="song\270325__littlerobotsoundfactory__hit-02.wav" />
+    <None Remove="song\270326__littlerobotsoundfactory__hit-01.wav" />
+    <None Remove="song\270327__littlerobotsoundfactory__hit-00.wav" />
+    <None Remove="song\270328__littlerobotsoundfactory__hero-death-00.wav" />
+    <None Remove="song\270329__littlerobotsoundfactory__jingle-lose-00.wav" />
+    <None Remove="song\270330__littlerobotsoundfactory__jingle-achievement-01.wav" />
+    <None Remove="song\270331__littlerobotsoundfactory__jingle-achievement-00.wav" />
+    <None Remove="song\270332__littlerobotsoundfactory__hit-03.wav" />
+    <None Remove="song\270333__littlerobotsoundfactory__jingle-win-00.wav" />
+    <None Remove="song\270334__littlerobotsoundfactory__jingle-lose-01.wav" />
+    <None Remove="song\270335__littlerobotsoundfactory__shoot-03.wav" />
+    <None Remove="song\270336__littlerobotsoundfactory__shoot-02.wav" />
+    <None Remove="song\270337__littlerobotsoundfactory__pickup-00.wav" />
+    <None Remove="song\270338__littlerobotsoundfactory__open-01.wav" />
+    <None Remove="song\270339__littlerobotsoundfactory__pickup-02.wav" />
+    <None Remove="song\270340__littlerobotsoundfactory__pickup-01.wav" />
+    <None Remove="song\270341__littlerobotsoundfactory__pickup-04.wav" />
+    <None Remove="song\270342__littlerobotsoundfactory__pickup-03.wav" />
+    <None Remove="song\270343__littlerobotsoundfactory__shoot-01.wav" />
+    <None Remove="song\270344__littlerobotsoundfactory__shoot-00.wav" />
+    <None Remove="song\bg_song.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="song\bg_song.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\
+C:\Users\User\Desktop\frozenbar\obj\Debug\netcoreapp3.1\
 hackaton
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\code\hackathon\frozenbar\App.xaml
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\User\Desktop\frozenbar\App.xaml
 11151548125
-
-13-440040122
+1-1832829823
+14-645624327
 1921654412462
 MainWindow.xaml;
 
