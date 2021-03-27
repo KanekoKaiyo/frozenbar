@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 
 namespace hackaton
@@ -10,7 +11,9 @@ namespace hackaton
         public void Shoot(Map map);
 
         public static void Kill(){
-            Hit++;       
+            Hit++;
+
         }
     }
+
 }

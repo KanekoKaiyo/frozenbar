@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 
 namespace hackaton
@@ -10,6 +11,7 @@ namespace hackaton
 
         private List<Entity[]> allMap;
         public Entity[][] MapGame { get; set; }
+        private Sound mySound=new Sound();
         public Map(int y)
         {
 
@@ -137,6 +139,8 @@ namespace hackaton
                     if (ko)
                     {
                         IControlable.Kill();
+                        SoundPlayer playSound = mySound.genRand();
+                        playSound.Play();
                         ko = false;
                         continue;
                     }
@@ -147,6 +151,8 @@ namespace hackaton
                     {
                         MapGame[bul.X][bul.Y - 1] = null;
                         IControlable.Kill();
+                        SoundPlayer playSound = mySound.genRand();
+                        playSound.Play();
                     }
                     else
                     {
