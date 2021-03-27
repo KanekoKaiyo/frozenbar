@@ -25,6 +25,8 @@ namespace hackaton
         // truc cool pour paufiner sur la fin
         bool versus = false;
         DarkShip darkShip;
+
+
         bool running = true;
         int count = 0; // comteur de temps total passé
         int interval = 800;
@@ -66,6 +68,7 @@ namespace hackaton
                 running = false;
                 dispatcherTimerScroll.Stop();
                 ShowGameOver();
+                return;
             }
             count = count + interval;
             showMap(map.MapGame);
@@ -73,7 +76,10 @@ namespace hackaton
 
         private void ShowGameOver()
         {
+
             // affichage d'une fenetre game over, j'aime pas la partie affichage :') l'iamge est dans img/GameOver.png
+            myCanvas.Children.Clear();
+
         }
 
 

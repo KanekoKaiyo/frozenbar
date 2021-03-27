@@ -42,27 +42,39 @@ namespace hackaton
             int newx = entity.X + x;
             int newy = entity.Y + y;
 
-            if(TestCrash(map, newx, newy))
+            if(TestOutMap(map, newx, newy))
             {
- 
-                SetEntity(map, entity.X, entity.Y, newx, newy);
-                entity.X = newx;
-                entity.Y = newy;
-                
+                if (TestCrash(map, newx, newy))
+                {
+
+                    SetEntity(map, entity.X, entity.Y, newx, newy);
+                    entity.X = newx;
+                    entity.Y = newy;
+
+                }
+                else if (map.MapGame[newx][newy] is Wall) return;
+                else
+                {
+                    map.Remove(entity.X, entity.Y);
+                }
             }
-            else if (map.MapGame[newx][newy] is Wall) return;
-            else
-            {
-                map.Remove(entity.X, entity.Y);
-            }
+
+            
 
 
         }
 
         private static bool TestCrash(Map map,int x, int y)
         {
+
+            if ( map.MapGame[x][y] == null) return true;
+            return false;
+        }
+
+        private static bool TestOutMap(Map map, int x, int y)
+        {
             int[] mapLength = map.Lenght();
-            if (0 <= x && x < mapLength[0] && 0 <= y && y < mapLength[1] && map.MapGame[x][y] == null) return true;
+            if (0 <= x && x < mapLength[0] && 0 <= y && y < mapLength[1]) return true;
             return false;
         }
 
