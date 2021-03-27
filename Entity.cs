@@ -10,7 +10,6 @@ namespace hackaton
 {
     abstract class Entity 
     {
-
         public int X { get; set; }
         public int Y { get; set; }
         public ImageBrush Sprite { get; set; }
@@ -22,7 +21,6 @@ namespace hackaton
             Sprite = new ImageBrush();
             Sprite.ImageSource = new BitmapImage(new Uri(sprite));
         }
-
     }
 }
 

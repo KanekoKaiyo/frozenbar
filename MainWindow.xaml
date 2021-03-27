@@ -10,7 +10,6 @@
     <Canvas Name="myCanvas" Background="Black" Focusable="True" KeyDown="Canvas_KeyisDown"  >
 
         <Label Foreground="White" Name="enemies" FontSize="16" FontWeight="ExtraBold">Enemies:</Label>
-
         
     </Canvas>
 </Window>

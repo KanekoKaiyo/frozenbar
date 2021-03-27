@@ -7,12 +7,8 @@ namespace hackaton
 {
     static class Loader
     {
-
-
-
         private static int nbrline = 30, nbrchar = 15, i = 0, j = 0;
         private static Entity[][] map;
-
 
         private static string[][] RecupText()
         {
