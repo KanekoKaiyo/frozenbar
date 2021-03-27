@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Quentin\\.nuget\\packages\\": {}
+    "C:\\Users\\Kaneko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj",
+      "projectUniqueName": "D:\\code\\hackathon\\frozenbar\\hackaton.csproj",
       "projectName": "hackaton",
-      "projectPath": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj",
-      "packagesPath": "C:\\Users\\Quentin\\.nuget\\packages\\",
-      "outputPath": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\obj\\",
+      "projectPath": "D:\\code\\hackathon\\frozenbar\\hackaton.csproj",
+      "packagesPath": "C:\\Users\\Kaneko\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\hackathon\\frozenbar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Quentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kaneko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +32,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -44,7 +43,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -63,7 +61,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
