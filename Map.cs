@@ -159,12 +159,9 @@ namespace hackaton
                         MapGame[bul.X][bul.Y - 1] = bul;
                         bul.Y--;
                     }
-                }
-
-                
+                } 
             }
         }
-
         private List<IControlable> RemoveShip()
         {
             List<IControlable> lship = new List<IControlable> { };
