@@ -1,0 +1,38 @@
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.exe
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.deps.json
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.json
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.dev.json
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.dll
+D:\Fourre tout\HACKATON\hackaton\bin\Debug\netcoreapp3.1\hackaton.pdb
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.csprojAssemblyReference.cache
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.cache
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.lref
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.g.resources
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfoInputs.cache
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfo.cs
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.csproj.CoreCompileInputs.cache
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.dll
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.pdb
+D:\Fourre tout\HACKATON\hackaton\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.exe
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.deps.json
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.json
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.dev.json
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.dll
+D:\appez\Download\hackaton\hackaton\bin\Debug\netcoreapp3.1\hackaton.pdb
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.csprojAssemblyReference.cache
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\App.g.cs
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.cache
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.lref
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.g.resources
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfoInputs.cache
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfo.cs
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.csproj.CoreCompileInputs.cache
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.dll
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.pdb
+D:\appez\Download\hackaton\hackaton\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache
