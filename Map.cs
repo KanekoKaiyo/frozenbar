@@ -11,7 +11,7 @@ namespace hackaton
 
         private List<Entity[]> allMap;
         public Entity[][] MapGame { get; set; }
-        private Sound mySound=new Sound();
+        //private Sound mySound=new Sound();
         public Map(int y)
         {
 
@@ -139,9 +139,9 @@ namespace hackaton
                     if (ko)
                     {
                         IControlable.Kill();
-                        SoundPlayer playSound = mySound.genRand();
+                        //SoundPlayer playSound = mySound.genRand();
                        
-                        playSound.Play();
+                        //playSound.Play();
                         
     
                         ko = false;
@@ -154,8 +154,8 @@ namespace hackaton
                     {
                         MapGame[bul.X][bul.Y - 1] = null;
                         IControlable.Kill();
-                        SoundPlayer playSound = mySound.genRand();
-                        playSound.Play();
+                        //SoundPlayer playSound = mySound.genRand();
+                        //playSound.Play();
                     }
                     else
                     {

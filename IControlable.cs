@@ -11,6 +11,7 @@ namespace hackaton
         public void Shoot(Map map);
         public static void Kill(){
             Hit++;
+            Sound.SoundEffect();
         }
     }
 }
