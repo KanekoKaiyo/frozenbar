@@ -45,8 +45,6 @@ namespace hackaton {
             new SoundPlayer(Properties.Resources._35),
             new SoundPlayer(Properties.Resources._36),
 
-
-
         };
 
         //public static Sound() {
@@ -101,7 +99,16 @@ namespace hackaton {
         public static void SoundEffect()
         {
             Random rand = new Random();
-            songs[rand.Next(0, 36)].Play();
+            try // GROS PANCEMENT TEMPO
+            {
+                songs[rand.Next(0, 36)].Play();
+            }
+            catch
+            {
+                SoundEffect();
+            }
+            
+            
 
         }
 
