@@ -14,6 +14,7 @@ namespace hackaton
         public int X { get; set; }
         public int Y { get; set; }
         public ImageBrush Sprite { get; set; }
+        public static string imagePath = @"\img";
         public Entity(int x, int y, String sprite)
         {
             X = x;

@@ -7,7 +7,7 @@ namespace hackaton
     class DarkShip :Entity, IControlable
     {
         public DarkShip(int x, int y)
-    : base(x, y, "D:\\appez\\Download\\hackaton\\hackaton\\img\\player.png")
+    : base(x, y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "player.png")
         {
         }
 
