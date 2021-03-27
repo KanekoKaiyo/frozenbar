@@ -39,7 +39,7 @@ namespace hackaton
         public MainWindow()
         {
             InitializeComponent();
-            //playBGSong();
+            playBGSong();
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
@@ -196,10 +196,10 @@ namespace hackaton
             }
         }
         // Musique de fond pour le menu, en attente
-        //private void playBGSong() {
-        //   SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
-        //   playSound.Play();
-        //   playSound.PlayLooping();
-        //}
+        private void playBGSong() {
+            SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
+            playSound.Play();
+            playSound.PlayLooping();
+        }
     }
 }
