@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 D:\code\hackathon\frozenbar\App.xaml
-11151548125
+2534537945
 
-13-440040122
+14-1230973728
 1921654412462
-MainWindow.xaml;
+GameOver.xaml;MainWindow.xaml;
 
 False
 

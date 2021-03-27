@@ -74,3 +74,5 @@ D:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackato
 D:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.dll
 D:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.pdb
 D:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\GameOver.g.cs
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\GameOver.baml

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hackaton.view;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -85,10 +86,10 @@ namespace hackaton
 
         private void ShowGameOver()
         {
-
-            // affichage d'une fenetre game over, j'aime pas la partie affichage :') l'iamge est dans img/GameOver.png
             myCanvas.Children.Clear();
-
+            GameOver Gameover = new GameOver(count);
+            Gameover.Show();
+            this.Close();
         }
 
 

@@ -46,22 +46,28 @@ namespace hackaton
 
             map = new Entity[nbrline][];
 
-
-            for (i = 0; i < nbrline; i++)
+            try
             {
-                map[i] = new Entity[nbrchar];
-                for (j = 0; j < nbrchar; j++)
+                for (i = 0; i < nbrline; i++)
                 {
-                    if (tabTemp[i][j] == "*")
+                    map[i] = new Entity[nbrchar];
+                    for (j = 0; j < nbrchar; j++)
                     {
-                        map[i][j] = new Wall();
-                    }
-                    else
-                    {
-                        map[i][j] = null;
+                        if (tabTemp[i][j] == "*")
+                        {
+                            map[i][j] = new Wall();
+                        }
+                        else
+                        {
+                            map[i][j] = null;
+                        }
                     }
                 }
+            } catch(Exception e)
+            {
+
             }
+            
             return map;
         }
         public static List<Entity[]> AddListEntity()
