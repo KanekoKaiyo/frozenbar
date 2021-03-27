@@ -94,6 +94,17 @@ namespace hackaton
             ReplaceShip(removeShip);
         }
 
+
+        public void AddMonster()
+        {
+            Random rdn = new Random();
+
+            for(int i = 0; i < MapGame.Length; i++)
+            {
+                if (rdn.NextDouble() <= 0.2) MapGame[i][0] = new Monster(i,0);
+            }
+        }
+
         private List<Bullet> RemoveBullet()
         {
             List<Bullet> lBullet = new List<Bullet> { };
@@ -144,6 +155,8 @@ namespace hackaton
                 MapGame[ship.X][ship.Y] = ship;
             }
         }
+
+
 
         private List<Entity[]> ASUPPRIMER()
         {
