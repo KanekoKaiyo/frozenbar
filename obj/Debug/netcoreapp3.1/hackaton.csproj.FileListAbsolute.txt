@@ -105,3 +105,30 @@ D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.Properties.Resource
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.GenerateResource.cache
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.g.cs
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.baml
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.exe
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\song\bg_song.wav
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.deps.json
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.json
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.dev.json
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.dll
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\bin\Debug\netcoreapp3.1\hackaton.pdb
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csprojAssemblyReference.cache
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\GameOver.g.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.g.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton_Content.g.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.cache
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton_MarkupCompile.lref
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\GameOver.baml
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.baml
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.g.resources
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.Properties.Resources.resources
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.GenerateResource.cache
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfoInputs.cache
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfo.cs
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.CoreCompileInputs.cache
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.dll
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.pdb
+D:\Fourre tout\HACKATON\hackaton\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache

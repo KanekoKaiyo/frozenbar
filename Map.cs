@@ -140,7 +140,10 @@ namespace hackaton
                     {
                         IControlable.Kill();
                         SoundPlayer playSound = mySound.genRand();
+                       
                         playSound.Play();
+                        
+    
                         ko = false;
                         continue;
                     }

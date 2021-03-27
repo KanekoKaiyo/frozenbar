@@ -12,9 +12,9 @@
 
         <Image Source="img\GameOver.jpg" Height="672" Width="496"/>
         <Rectangle Name="over" Fill="White" Height="672" Width="496"/>
-        <Button x:Name="restart" Content="restart" Click="restart_Click" Canvas.Left="229" Canvas.Top="584"    />
-        <TextBlock x:Name="countTB" Canvas.Left="33" Canvas.Top="463" Text="" TextWrapping="Wrap" Height="38" Width="215" Background="Red"/>
-        <TextBlock x:Name="killTB" Canvas.Left="248" Canvas.Top="502" Text="" TextWrapping="Wrap" Height="38" Width="212" Background="Red"/>
+        <Button x:Name="restart" Content="restart" Click="restart_Click" Canvas.Left="229" Canvas.Top="626"    />
+        <TextBlock x:Name="countTB" Canvas.Left="9" Canvas.Top="571" Text="" TextWrapping="Wrap" Height="38" Width="215" Background="#FF1A357C"/>
+        <TextBlock x:Name="killTB" Canvas.Left="272" Canvas.Top="575" Text="" TextWrapping="Wrap" Height="38" Width="212" Background="#FF1A357C"/>
 
     </Canvas>
 
