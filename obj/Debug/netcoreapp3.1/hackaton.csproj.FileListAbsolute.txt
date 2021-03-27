@@ -97,3 +97,9 @@ C:\Users\User\Desktop\frozenbar\bin\Debug\netcoreapp3.1\hackaton.runtimeconfig.d
 C:\Users\User\Desktop\frozenbar\bin\Debug\netcoreapp3.1\hackaton.dll
 C:\Users\User\Desktop\frozenbar\bin\Debug\netcoreapp3.1\hackaton.pdb
 C:\Users\User\Desktop\frozenbar\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache
+D:\code\hackathon\frozenbar\bin\Debug\netcoreapp3.1\song\bg_song.wav
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\GameOver.g.cs
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton_Content.g.cs
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\GameOver.baml
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.Properties.Resources.resources
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.GenerateResource.cache
