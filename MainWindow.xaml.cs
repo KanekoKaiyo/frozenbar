@@ -71,6 +71,7 @@ namespace hackaton
                 return;
             }
             count = count + interval;
+            map.AddMonster();
             showMap(map.MapGame);
         }
 
