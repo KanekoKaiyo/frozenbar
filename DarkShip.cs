@@ -6,7 +6,6 @@ namespace hackaton
 {
     class DarkShip :Entity, IControlable
     {
-        public int Kill { get; set; }
         public DarkShip(int x, int y)
     : base(x, y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "DarkShip.png")
         {
@@ -16,5 +15,7 @@ namespace hackaton
         {
             map.SetInMap(new Monster(this.X, this.Y + 1), this.X, this.Y + 1);
         }
+
+        
     }
 }
