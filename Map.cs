@@ -13,7 +13,8 @@ namespace hackaton
         public Map(int y)
         {
 
-            allMap = ASUPPRIMER();
+            //allMap = ASUPPRIMER();
+            allMap = Loader.AddListEntity();
             MapGame = new Entity[allMap[0].Length][];
             
             for (int i = 0; i < MapGame.Length; i++)
@@ -124,9 +125,11 @@ namespace hackaton
         {
             foreach(Bullet bul in l)
             {
-                if (MapGame[bul.X][bul.Y] != null && MapGame[bul.X][bul.Y] is Wall) continue;
+                
+                if (MapGame[bul.X][bul.Y] != null && MapGame[bul.X][bul.Y] is Wall) MapGame[bul.X][bul.Y + 1] = null;
+                if (MapGame[bul.X][bul.Y - 1] != null && MapGame[bul.X][bul.Y] is Wall) continue;
 
-                MapGame[bul.X][bul.Y] = bul;
+                MapGame[bul.X][bul.Y-1] = bul;
             }
         }
 
