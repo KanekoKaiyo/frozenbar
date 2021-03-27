@@ -102,7 +102,7 @@ namespace hackaton
 
             for(int i = 0; i < MapGame.Length; i++)
             {
-                if (rdn.NextDouble() <= 0.2) MapGame[i][0] = new Monster(i,0);
+                if (rdn.NextDouble() <= 0.05) MapGame[i][0] = new Monster(i,0);
             }
         }
 
