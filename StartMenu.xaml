@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="StartMenu" Height="672" Width="496" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <StackPanel>
-        <Canvas x:Name="canvas" Background="Black" Focusable="True">
+        <Canvas x:Name="canvas" Background="black" Focusable="True">
             <Label Content="MARS INVADERS" Canvas.Right="200" Canvas.Top="150" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack" FontStretch="Medium"/>
-            <Button Content="Start" Canvas.Right="180" Canvas.Top="250" Height="30" Width="150"/>
+            <Button Content="Start" Canvas.Right="180" Canvas.Top="250" Height="30" Width="150" Click="start"/>
         </Canvas>
     </StackPanel>
 </Window>
