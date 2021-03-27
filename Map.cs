@@ -54,10 +54,11 @@ namespace hackaton
             }
         }
 
-   
+
         public void Scroll()
         {
             List<Bullet> removeBullet = RemoveBullet();
+            List<IControlable> removeShip = RemoveShip();
 
             Entity[][] newMapGame = new Entity[allMap[0].Length][];
             for (int i = 0; i < newMapGame.Length; i++)
@@ -66,9 +67,9 @@ namespace hackaton
             }
             for (int i = 0; i < allMap[0].Length; i++)
             {
-                for (int j = 0; j < MapGame[0].Length-1; j++)
+                for (int j = 0; j < MapGame[0].Length - 1; j++)
                 {
-                    newMapGame[i][j+1] = MapGame[i][j];
+                    newMapGame[i][j + 1] = MapGame[i][j];
                 }
             }
             for (int i = 0; i < allMap[0].Length; i++)
@@ -90,6 +91,18 @@ namespace hackaton
 
 
             Replacebullet(removeBullet);
+            ReplaceShip(removeShip);
+        }
+
+
+        public void AddMonster()
+        {
+            Random rdn = new Random();
+
+            for(int i = 0; i < MapGame.Length; i++)
+            {
+                if (rdn.NextDouble() <= 0.2) MapGame[i][0] = new Monster(i,0);
+            }
         }
 
         private List<Bullet> RemoveBullet()
@@ -116,6 +129,34 @@ namespace hackaton
                 MapGame[bul.X][bul.Y] = bul;
             }
         }
+
+        private List<IControlable> RemoveShip()
+        {
+            List<IControlable> lship = new List<IControlable> { };
+
+            for (int i = 0; i < MapGame.Length; i++)
+            {
+                for (int j = 0; j < MapGame[0].Length; j++)
+                {
+                    if (MapGame[i][j] != null && MapGame[i][j] is IControlable) lship.Add(Remove(i, j) as IControlable);
+                }
+            }
+
+            return lship;
+        }
+
+        private void ReplaceShip(List<IControlable> l)
+        {
+            foreach (Entity ship in l)
+            {
+
+                if (MapGame[ship.X][ship.Y] != null) continue;
+
+                MapGame[ship.X][ship.Y] = ship;
+            }
+        }
+
+
 
         private List<Entity[]> ASUPPRIMER()
         {
@@ -145,6 +186,39 @@ namespace hackaton
 
 
             return map;
+        }
+
+        //public bool isOnMap()
+        //{
+        //    bool isOnMap = true;
+        //    for(int i = 0; i <= MapGame.Length; i -=- i)
+        //    {
+        //        for (int j = 0; j <= MapGame[i].Length; i -= -i){
+        //            if(MapGame[i][j] is IControlable)
+        //            {
+
+        //            } else
+        //            {
+        //                isOnMap = false;
+        //                return isOnMap;
+        //            }
+        //        }
+        //    }
+
+        //    return isOnMap;
+        //}
+
+
+        public bool isOnMap()
+        {
+            for(int i = 0; i < MapGame.Length; i++)
+            {
+                for(int j =0; j < MapGame[0].Length; j++)
+                {
+                    if (MapGame[i][j] is IControlable) return true;
+                }
+            }
+            return false;
         }
     }
 }

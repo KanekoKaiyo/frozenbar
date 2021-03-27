@@ -27,6 +27,10 @@ namespace hackaton
         DarkShip darkShip;
 
 
+        bool running = true;
+        int count = 0; // comteur de temps total passé
+        int interval = 800;
+
 
         Ship ship;
         Map map = new Map(20);
@@ -37,7 +41,7 @@ namespace hackaton
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
-            dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(800);
+            dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
             dispatcherTimerScroll.Start();
 
 
@@ -58,9 +62,26 @@ namespace hackaton
         private void ScrollAuto(object sender, EventArgs e)
         {
             map.Scroll();
+            // Test si le joueur est toujours sur la map, si non running = false et si running = false il faut stop le jeux et affiché un écran de game over
+            if(map.isOnMap() == false)
+            {
+                running = false;
+                dispatcherTimerScroll.Stop();
+                ShowGameOver();
+                return;
+            }
+            count = count + interval;
+            map.AddMonster();
             showMap(map.MapGame);
         }
 
+        private void ShowGameOver()
+        {
+
+            // affichage d'une fenetre game over, j'aime pas la partie affichage :') l'iamge est dans img/GameOver.png
+            myCanvas.Children.Clear();
+
+        }
 
 
        //truc qui fais que quand on appuis sur un bouton ça fais un truc
