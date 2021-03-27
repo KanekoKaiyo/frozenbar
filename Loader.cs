@@ -19,7 +19,7 @@ namespace hackaton
             string[][] result = new string[nbrline][];
             try
             {
-                string input = File.ReadAllText("C:\\Users\\appez\\Source\\Repos2\\Mahalatha7\\frozenbar\\map.txt");
+                string input = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory +  "map.txt");
 
                 foreach (var row in input.Split('\n'))
                 {

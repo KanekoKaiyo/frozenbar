@@ -28,10 +28,8 @@ namespace hackaton
 
 
         bool running = true;
-        int count = 0; // comteur de temps total passé
-        int interval = 800;
-
-        int[] step = { 30,60,120,180,300,600 };
+        double count = 0; // comteur de temps total passé
+        double interval = 800;
 
         Ship ship;
         Map map = new Map(20);
@@ -79,30 +77,11 @@ namespace hackaton
 
         private void UpdateInterval()
         {   
-            if(count >= (step[0] * 1000))
+            interval = interval * 0.999;
+            dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            if(interval != 800)
             {
-                interval = 700;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
-            } else if(count >= (step[1] * 1000))
-            {
-                interval = 600;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
-            } else if(count >= (step[2] * 1000))
-            {
-                interval = 400;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
-            } else if(count >= (step[3] * 1000))
-            {
-                interval = 300;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
-            } else if(count >= (step[4] * 1000))
-            {
-                interval = 200;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
-            } else if(count >= (step[5] * 1000))
-            {
-                interval = 100;
-                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+                Console.WriteLine();
             }
         }
 
