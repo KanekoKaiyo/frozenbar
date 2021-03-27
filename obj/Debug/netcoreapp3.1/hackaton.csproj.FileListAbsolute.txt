@@ -103,3 +103,5 @@ D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton_Content.g.cs
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\GameOver.baml
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.Properties.Resources.resources
 D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.GenerateResource.cache
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.g.cs
+D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\StartMenu.baml
