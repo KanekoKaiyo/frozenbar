@@ -8,6 +8,7 @@ namespace hackaton
 
     class Ship : Entity, IControlable
     {
+        public int Kill { get; set; }
         public Ship(int x, int y)
             :base(x,y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "ship.png")
         {
