@@ -146,5 +146,25 @@ namespace hackaton
 
             return map;
         }
+
+        private bool isOnMap()
+        {
+            bool isOnMap = true;
+            for(int i = 0; i <= MapGame.Length; i -=- i)
+            {
+                for (int j = 0; j <= MapGame[i].Length; i -= -i){
+                    if(MapGame[i][j] is IControlable)
+                    {
+
+                    } else
+                    {
+                        isOnMap = false;
+                        return isOnMap;
+                    }
+                }
+            }
+
+            return isOnMap;
+        }
     }
 }
