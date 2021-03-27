@@ -147,7 +147,7 @@ namespace hackaton
             return map;
         }
 
-        private bool isOnMap()
+        public bool isOnMap()
         {
             bool isOnMap = true;
             for(int i = 0; i <= MapGame.Length; i -=- i)
