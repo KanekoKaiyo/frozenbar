@@ -38,11 +38,11 @@ namespace hackaton
         {
             InitializeComponent();
 
+
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
             dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
             dispatcherTimerScroll.Start();
-
 
             ship = new Ship(5, 10);
             map.SetInMap(ship, 5, 10);
@@ -54,8 +54,6 @@ namespace hackaton
                 darkShip = new DarkShip(10, 0);
                 map.SetInMap(darkShip, 10, 0);
             }
-
-
         }
 
         private void ScrollAuto(object sender, EventArgs e)
@@ -134,9 +132,7 @@ namespace hackaton
             {
                 if (e.Key == Key.NumPad1)
                 {
-
                     Move.MoveEntity(darkShip, MoveDisponible.left, map);
-
                 }
                 if (e.Key == Key.NumPad3)
                 {
