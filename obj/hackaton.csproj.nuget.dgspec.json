@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj": {}
+    "C:\\Users\\appez\\Source\\Repos\\Mahalatha7\\frozenbar\\hackaton.csproj": {}
   },
   "projects": {
-    "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj": {
+    "C:\\Users\\appez\\Source\\Repos\\Mahalatha7\\frozenbar\\hackaton.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj",
+        "projectUniqueName": "C:\\Users\\appez\\Source\\Repos\\Mahalatha7\\frozenbar\\hackaton.csproj",
         "projectName": "hackaton",
-        "projectPath": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\hackaton.csproj",
-        "packagesPath": "C:\\Users\\Quentin\\.nuget\\packages\\",
-        "outputPath": "D:\\Fourre tout\\HACKATON\\hackaton\\Mahalatha7\\frozenbar\\obj\\",
+        "projectPath": "C:\\Users\\appez\\Source\\Repos\\Mahalatha7\\frozenbar\\hackaton.csproj",
+        "packagesPath": "C:\\Users\\appez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\appez\\Source\\Repos\\Mahalatha7\\frozenbar\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Quentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\appez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -57,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
