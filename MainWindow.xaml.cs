@@ -31,6 +31,7 @@ namespace hackaton
         int count = 0; // comteur de temps total passé
         int interval = 800;
 
+        int[] step = { 30,60,120,180,300,600 };
 
         Ship ship;
         Map map = new Map(20);
@@ -71,8 +72,38 @@ namespace hackaton
                 return;
             }
             count = count + interval;
+            UpdateInterval();
             map.AddMonster();
             showMap(map.MapGame);
+        }
+
+        private void UpdateInterval()
+        {   
+            if(count >= (step[0] * 1000))
+            {
+                interval = 700;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            } else if(count >= (step[1] * 1000))
+            {
+                interval = 600;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            } else if(count >= (step[2] * 1000))
+            {
+                interval = 400;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            } else if(count >= (step[3] * 1000))
+            {
+                interval = 300;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            } else if(count >= (step[4] * 1000))
+            {
+                interval = 200;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            } else if(count >= (step[5] * 1000))
+            {
+                interval = 100;
+                dispatcherTimerScroll.Interval = TimeSpan.FromMilliseconds(interval);
+            }
         }
 
         private void ShowGameOver()
