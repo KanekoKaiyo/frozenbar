@@ -1,0 +1,15 @@
+﻿<Window x:Class="hackaton.StartMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hackaton"
+        mc:Ignorable="d"
+        Title="StartMenu" Height="672" Width="496" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel>
+        <Canvas x:Name="canvas" Background="black" Focusable="True">
+            <Label Content="MARS INVADERS" Canvas.Right="200" Canvas.Top="150" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack" FontStretch="Medium"/>
+            <Button Content="Start" Canvas.Right="180" Canvas.Top="250" Height="30" Width="150" Click="start"/>
+        </Canvas>
+    </StackPanel>
+</Window>

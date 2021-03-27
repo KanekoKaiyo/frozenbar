@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\code\hackathon\frozenbar\obj\Debug\netcoreapp3.1\
+C:\Users\User\Desktop\frozenbar\obj\Debug\netcoreapp3.1\
 hackaton
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-D:\code\hackathon\frozenbar\App.xaml
-2534537945
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\User\Desktop\frozenbar\App.xaml
+31400960094
 1-1832829823
-181101327200
+191334119038
 1921654412462
-GameOver.xaml;MainWindow.xaml;
+GameOver.xaml;MainWindow.xaml;StartMenu.xaml;
 
 False
 
