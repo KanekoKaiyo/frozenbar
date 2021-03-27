@@ -11,7 +11,7 @@ namespace hackaton
             rdm = new Random();
         }
         public Monster(int x, int y)
-            : base(x, y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "invader1.gif")
+            : base(x, y, AppDomain.CurrentDomain.BaseDirectory + imagePath + $"Fabi{rdm.Next(1,7)}.jpg")
         {
 
         }

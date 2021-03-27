@@ -9,14 +9,13 @@ namespace hackaton
     class Ship : Entity, IControlable
     {
         public Ship(int x, int y)
-            :base(x,y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "ojizenoadfjlonkszerdflmùkojn^vbzrmnojurzgmùonljermkojnmkoezjngrmgnkjzr.jpg")
+            :base(x,y, AppDomain.CurrentDomain.BaseDirectory + imagePath + "ship.png")
         {
 
         }
         public Ship()
-            : base(0,0, AppDomain.CurrentDomain.BaseDirectory + imagePath + "ojizenoadfjlonkszerdflmùkojn^vbzrmnojurzgmùonljermkojnmkoezjngrmgnkjzr.jpg")
-        {
-
+            : base(0,0, AppDomain.CurrentDomain.BaseDirectory + imagePath + "ship.png")
+        { 
         }
 
         public void Shoot(Map map)
