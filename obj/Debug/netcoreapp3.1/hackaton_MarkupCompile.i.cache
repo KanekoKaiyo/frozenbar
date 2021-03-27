@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\User\Desktop\frozenbar\App.xaml
-22017970274
+31400960094
 1-1832829823
-182125052644
+191334119038
 1921654412462
-MainWindow.xaml;StartMenu.xaml;
+GameOver.xaml;MainWindow.xaml;StartMenu.xaml;
 
-True
+False
 

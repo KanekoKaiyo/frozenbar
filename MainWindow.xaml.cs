@@ -1,9 +1,8 @@
-﻿using Microsoft.Win32;
+﻿using hackaton.view;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,7 +38,7 @@ namespace hackaton
         public MainWindow()
         {
             InitializeComponent();
-            playBGSong();
+
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
@@ -87,10 +86,10 @@ namespace hackaton
 
         private void ShowGameOver()
         {
-
-            // affichage d'une fenetre game over, j'aime pas la partie affichage :') l'iamge est dans img/GameOver.png
             myCanvas.Children.Clear();
-
+            GameOver Gameover = new GameOver(count);
+            Gameover.Show();
+            this.Close();
         }
 
 
@@ -195,11 +194,6 @@ namespace hackaton
                 }
             }
         }
-        // Musique de fond pour le menu, en attente
-        private void playBGSong() {
-            SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
-            playSound.Play();
-            playSound.PlayLooping();
-        }
+
     }
 }
