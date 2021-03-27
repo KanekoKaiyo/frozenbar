@@ -102,7 +102,7 @@ namespace hackaton
 
             for(int i = 0; i < MapGame.Length; i++)
             {
-                if (rdn.NextDouble() <= 0.2) MapGame[i][0] = new Monster(i,0);
+                if (rdn.NextDouble() <= 0.05) MapGame[i][0] = new Monster(i,0);
             }
         }
 
@@ -136,13 +136,18 @@ namespace hackaton
                     MapGame[bul.X][bul.Y] = null;
                     if (ko)
                     {
+                        IControlable.Kill();
                         ko = false;
                         continue;
                     }
                 }                
                 if (bul.Y - 1 >= 0 && !(MapGame[bul.X][bul.Y-1] != null && MapGame[bul.X][bul.Y-1] is Wall))
                 {
-                    if (MapGame[bul.X][bul.Y] != null) MapGame[bul.X][bul.Y - 1] = null;
+                    if (MapGame[bul.X][bul.Y] != null)
+                    {
+                        MapGame[bul.X][bul.Y - 1] = null;
+                        IControlable.Kill();
+                    }
                     else
                     {
                         MapGame[bul.X][bul.Y - 1] = bul;

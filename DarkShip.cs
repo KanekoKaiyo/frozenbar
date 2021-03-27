@@ -15,5 +15,7 @@ namespace hackaton
         {
             map.SetInMap(new Monster(this.X, this.Y + 1), this.X, this.Y + 1);
         }
+
+        
     }
 }
