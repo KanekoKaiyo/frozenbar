@@ -53,6 +53,12 @@ namespace hackaton
 
                 }
                 else if (map.MapGame[newx][newy] is Wall) return;
+                else if (map.MapGame[newx][newy] is Ship)
+                {
+                    SetEntity(map, entity.X, entity.Y, newx, newy);
+                    entity.X = newx;
+                    entity.Y = newy;
+                }
                 else
                 {
                     map.Remove(entity.X, entity.Y);
