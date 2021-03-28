@@ -86,6 +86,11 @@ namespace hackaton
             if (boss is null) map.AddMonster();
             else
             {
+                if (map.isBossOnMap() is null) {
+                    ShowWin();
+                    return;
+                }
+
                 if (rdm.NextDouble() <= 0.5) Move.MoveEntity(boss, MoveDisponible.left, map);
                 else Move.MoveEntity(boss, MoveDisponible.right, map);
 

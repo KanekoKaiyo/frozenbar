@@ -22,12 +22,13 @@ namespace hackaton
         public Win()
         {
             InitializeComponent();
-            winwin.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + @"\img" + "Win.jpg"));
+            winwin.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + @"\img\" + "Win.png"));
             win.Fill = winwin;
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)
         {
+            IControlable.Hit = 0;
             MainWindow restart = new MainWindow();
             restart.Show();
             this.Close();
