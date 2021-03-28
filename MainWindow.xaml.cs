@@ -77,7 +77,7 @@ namespace hackaton
                 ShowGameOver();
                 return;
             }
-            else if(IControlable.Hit == 0 && boss is null)
+            else if(IControlable.Hit == 10 && boss is null)
             {
                 TimeToBoss();
             }
