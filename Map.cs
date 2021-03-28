@@ -11,7 +11,7 @@ namespace hackaton
 
         private List<Entity[]> allMap;
         public Entity[][] MapGame { get; set; }
-        private Sound mySound=new Sound();
+        //private Sound mySound=new Sound();
         public Map(int y)
         {
 
@@ -52,8 +52,14 @@ namespace hackaton
             int[] mapLength = Lenght();
             if (0 <= x && x < mapLength[0] && 0 <= y && y < mapLength[1])
             {
-                if (MapGame[x][y] != null && MapGame[x][y] is Wall) return;
-                MapGame[x][y] = entity;
+                if (!(MapGame[x][y] is Bullet || MapGame[x][y] is Wall)) {
+                    if (MapGame[x][y] != null)
+                    {
+                        IControlable.Kill();
+                        MapGame[x][y] = null;
+                    }
+                    else MapGame[x][y] = entity;
+                }
             }
         }
 
@@ -125,13 +131,13 @@ namespace hackaton
 
         private void Replacebullet(List<Bullet> l)
         {
-            bool ko= false;
+            bool ko;
 
             foreach(Bullet bul in l)
             {
-                
-                
-                if (!(MapGame[bul.X][bul.Y] != null && MapGame[bul.X][bul.Y] is Wall))
+                ko = false;
+
+                if (!( MapGame[bul.X][bul.Y] is Wall))
                 {
                     if (MapGame[bul.X][bul.Y] != null) ko = true;
 
@@ -139,26 +145,24 @@ namespace hackaton
                     if (ko)
                     {
                         IControlable.Kill();
-                        SoundPlayer playSound = mySound.genRand();
-                        playSound.Play();
-                        ko = false;
-                        continue;
+           
                     }
-                }                
-                if (bul.Y - 1 >= 0 && !(MapGame[bul.X][bul.Y-1] != null && MapGame[bul.X][bul.Y-1] is Wall))
-                {
-                    if (MapGame[bul.X][bul.Y] != null)
+
+                    else if (bul.Y - 1 >= 0 && !(MapGame[bul.X][bul.Y - 1] is Wall))
                     {
-                        MapGame[bul.X][bul.Y - 1] = null;
-                        IControlable.Kill();
-                        SoundPlayer playSound = mySound.genRand();
-                        playSound.Play();
-                    }
-                    else
-                    {
-                        MapGame[bul.X][bul.Y - 1] = bul;
-                        bul.Y--;
-                    }
+                        if (MapGame[bul.X][bul.Y - 1] != null)
+                        {
+                            MapGame[bul.X][bul.Y - 1] = null;
+                            IControlable.Kill();
+                        }
+                        else
+                        {
+                            MapGame[bul.X][bul.Y - 1] = bul;
+                            bul.Y--;
+                        }
+
+                    }                
+              
                 } 
             }
         }
