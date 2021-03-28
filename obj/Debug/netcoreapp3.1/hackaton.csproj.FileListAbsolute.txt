@@ -186,3 +186,5 @@ C:\Users\User\Desktop\Utilitaire\frozenbar\obj\Debug\netcoreapp3.1\hackaton.Asse
 C:\Users\User\Desktop\Utilitaire\frozenbar\obj\Debug\netcoreapp3.1\hackaton.AssemblyInfo.cs
 C:\Users\User\Desktop\Utilitaire\frozenbar\obj\Debug\netcoreapp3.1\hackaton.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Utilitaire\frozenbar\obj\Debug\netcoreapp3.1\hackaton.genruntimeconfig.cache
+C:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\Win.g.cs
+C:\Users\appez\Source\Repos\Mahalatha7\frozenbar\obj\Debug\netcoreapp3.1\Win.baml
