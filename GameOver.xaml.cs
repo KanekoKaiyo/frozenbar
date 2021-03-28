@@ -22,7 +22,7 @@ namespace hackaton.view
         {
             InitializeComponent();
             //changer pour bonnes images
-            gameover.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + @"\img\" + "GameOver.jpg"));
+            gameover.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + @"\img\" + "wtfFabi.jpg"));
             over.Fill = gameover;
             string nbrkill = "Vous avez tuez : " + IControlable.Hit + " méchant Fabion";
             killTB.Text = nbrkill;

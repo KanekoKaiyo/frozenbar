@@ -112,9 +112,16 @@ namespace hackaton
             Gameover.Show();
             this.Close();
         }
+        private void ShowWin()
+        {
+            myCanvas.Children.Clear();
+            Win win = new Win();
+            win.Show();
+            this.Close();
+        }
 
 
-       //truc qui fais que quand on appuis sur un bouton ça fais un truc
+        //truc qui fais que quand on appuis sur un bouton ça fais un truc
         private void Canvas_KeyisDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Left || e.Key == Key.Q)
