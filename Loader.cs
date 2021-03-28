@@ -77,6 +77,8 @@ namespace hackaton
                 entities.Add(tabTemp[i]);
                 
             }
+            i = 0;
+            j= 0;
             return entities;
         }
     }
