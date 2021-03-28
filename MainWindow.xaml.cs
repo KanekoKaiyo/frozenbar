@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Media;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +31,7 @@ namespace hackaton
         bool running = true;
         double count = 0; // comteur de temps total passé
         double interval = 800;
+        Random rdm = new Random();
 
         Ship ship;
         Map map = new Map(20);
@@ -39,7 +39,7 @@ namespace hackaton
         public MainWindow()
         {
             InitializeComponent();
-            playSongBg();
+			playSongBg();
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
@@ -60,18 +60,38 @@ namespace hackaton
 
         private void ScrollAuto(object sender, EventArgs e)
         {
+
+            Boss boss = map.isBossOnMap();
+
+
+
             map.Scroll();
+
+
             // Test si le joueur est toujours sur la map, si non running = false et si running = false il faut stop le jeux et affiché un écran de game over
-            if(map.isOnMap() == false)
+
+            if (map.isOnMap() == false)
             {
                 running = false;
                 dispatcherTimerScroll.Stop();
                 ShowGameOver();
                 return;
             }
+            else if(IControlable.Hit == 0 && boss is null)
+            {
+                TimeToBoss();
+            }
             count = count + interval;
             UpdateInterval();
-            map.AddMonster();
+            if (boss is null) map.AddMonster();
+            else
+            {
+                if (rdm.NextDouble() <= 0.5) Move.MoveEntity(boss, MoveDisponible.left, map);
+                else Move.MoveEntity(boss, MoveDisponible.right, map);
+
+                if (rdm.NextDouble() < 0.05) boss.WallInvo(map);
+                else boss.Invo(map);
+            }
             showMap(map.MapGame);
         }
 
@@ -178,27 +198,51 @@ namespace hackaton
                 {
                     if (map[i][j]!=null) 
                     {
-                       
-                        Rectangle newEntity= new Rectangle
-                        {
-                            Tag = "entity",
-                            Height =  32,
-                            Width =  32,
-                            Fill = map[i][j].Sprite,
+                        if (map[i][j] is Boss){
+                            Rectangle newEntity = new Rectangle
+                            {
+                                Tag = "entity",
+                                Height = 62,
+                                Width = 62,
+                                Fill = map[i][j].Sprite,
+                            };
+                            Canvas.SetTop(newEntity, j * 32);
+                            Canvas.SetLeft(newEntity, i * 32);
+                            myCanvas.Children.Add(newEntity);
+                        }
+                        else {
 
 
-                        };
-                        Canvas.SetTop(newEntity, j * 32);
-                        Canvas.SetLeft(newEntity, i * 32);
-                        myCanvas.Children.Add(newEntity);
+                            Rectangle newEntity = new Rectangle
+                            {
+                                Tag = "entity",
+                                Height = 32,
+                                Width = 32,
+                                Fill = map[i][j].Sprite,
+
+                            };
+
+                            Canvas.SetTop(newEntity, j * 32);
+                            Canvas.SetLeft(newEntity, i * 32);
+                            myCanvas.Children.Add(newEntity);
+                        }
+                        
                     }
                 }
             }
         }
-        public void playSongBg() {
+
+        private void TimeToBoss()
+        {
+            Map bossMap = new Map(map.Lenght()[1], map.GetAllMap(),ship);
+            map = bossMap;
+            showMap(map.MapGame);
+        }
+		private void playSongBg() {
             SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
             playSound.Play();
             playSound.PlayLooping();
         }
+
     }
 }
