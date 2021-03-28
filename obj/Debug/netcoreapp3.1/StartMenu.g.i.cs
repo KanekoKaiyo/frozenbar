@@ -61,7 +61,7 @@ namespace hackaton {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/hackaton;V1.0.0.0;component/startmenu.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/hackaton;component/startmenu.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\StartMenu.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -93,7 +93,7 @@ namespace hackaton.view {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/hackaton;V1.0.0.0;component/gameover.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/hackaton;component/gameover.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GameOver.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

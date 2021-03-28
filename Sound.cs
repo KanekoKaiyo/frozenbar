@@ -6,7 +6,7 @@ using System.Text;
 namespace hackaton {
     static class Sound {
 
-        private static SoundPlayer[] songs = new SoundPlayer[37] {
+        private static SoundPlayer[] songs = new SoundPlayer[23] {
             new SoundPlayer(Properties.Resources._0),
             new SoundPlayer(Properties.Resources._1),
             new SoundPlayer(Properties.Resources._2),
@@ -29,22 +29,7 @@ namespace hackaton {
             new SoundPlayer(Properties.Resources._19),
             new SoundPlayer(Properties.Resources._20),
             new SoundPlayer(Properties.Resources._21),
-            new SoundPlayer(Properties.Resources._22),
-            new SoundPlayer(Properties.Resources._23),
-            new SoundPlayer(Properties.Resources._24),
-            new SoundPlayer(Properties.Resources._25),
-            new SoundPlayer(Properties.Resources._26),
-            new SoundPlayer(Properties.Resources._27),
-            new SoundPlayer(Properties.Resources._28),
-            new SoundPlayer(Properties.Resources._29),
-            new SoundPlayer(Properties.Resources._30),
-            new SoundPlayer(Properties.Resources._31),
-            new SoundPlayer(Properties.Resources._32),
-            new SoundPlayer(Properties.Resources._33),
-            new SoundPlayer(Properties.Resources._34),
-            new SoundPlayer(Properties.Resources._35),
-            new SoundPlayer(Properties.Resources._36),
-
+            new SoundPlayer(Properties.Resources._22)
         };
 
         //public static Sound() {
@@ -96,22 +81,15 @@ namespace hackaton {
         //    return song;
         //}
 
-        public static void SoundEffect()
-        {
+        public static void SoundEffect() {
             Random rand = new Random();
             try // GROS PANCEMENT TEMPO
             {
-                songs[rand.Next(0, 36)].Play();
-            }
-            catch
-            {
+                songs[rand.Next(0, 22)].Play();
+            } catch {
                 SoundEffect();
             }
-            
-            
 
         }
-
-        
     }
 }
