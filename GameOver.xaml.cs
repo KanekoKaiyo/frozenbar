@@ -34,6 +34,7 @@ namespace hackaton.view
 
         private void restart_Click(object sender, RoutedEventArgs e)
         {
+            IControlable.Hit = 0;
             MainWindow restart = new MainWindow();
             restart.Show();
             this.Close();
