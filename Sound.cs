@@ -32,6 +32,8 @@ namespace hackaton {
             new SoundPlayer(Properties.Resources._22)
         };
 
+        private static SoundPlayer bgSound = new SoundPlayer(Properties.Resources.bg_song);
+
         //public static Sound() {
         //    songs[0] = new SoundPlayer(Properties.Resources._0);
         //    songs[1] = new SoundPlayer(Properties.Resources._1);
@@ -90,6 +92,12 @@ namespace hackaton {
                 SoundEffect();
             }
 
+        }
+
+        public static void PlayBgMusic()
+        {
+            bgSound.Play();
+            bgSound.PlayLooping();
         }
     }
 }

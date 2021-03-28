@@ -7,7 +7,7 @@ namespace hackaton
     class Boss : Entity
     {
         public Boss()
-            : base(7,0, AppDomain.CurrentDomain.BaseDirectory + imagePath + "wtfFabi.jpg") 
+            : base(7,0, AppDomain.CurrentDomain.BaseDirectory + imagePath + "bossFabi.jpg") 
         {
 
         }

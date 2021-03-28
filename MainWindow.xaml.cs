@@ -239,9 +239,8 @@ namespace hackaton
             showMap(map.MapGame);
         }
 		private void playSongBg() {
-            SoundPlayer playSound = new SoundPlayer(Properties.Resources.bg_song);
-            playSound.Play();
-            playSound.PlayLooping();
+
+            Sound.PlayBgMusic();
         }
 
     }
