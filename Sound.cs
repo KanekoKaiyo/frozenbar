@@ -88,10 +88,12 @@ namespace hackaton {
             try // GROS PANCEMENT TEMPO
             {
                 songs[rand.Next(0, 22)].Play();
+                bgSound.PlayLooping();
+
             } catch {
                 SoundEffect();
             }
-
+            
         }
 
         public static void PlayBgMusic()
