@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:hackaton"
         mc:Ignorable="d"
         
-    Title="Mars invader" Height="672" Width="496" FocusManager.FocusedElement="{Binding ElementName=myCanvas}">
+    Title="Mars invader" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="672" Width="496" FocusManager.FocusedElement="{Binding ElementName=myCanvas}">
     <Canvas Name="myCanvas" Background="Black" Focusable="True" KeyDown="Canvas_KeyisDown"  >
 
         <Label Foreground="White" Name="enemies" FontSize="16" FontWeight="ExtraBold">Enemies:</Label>
