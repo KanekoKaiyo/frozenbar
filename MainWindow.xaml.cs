@@ -39,7 +39,7 @@ namespace hackaton
         public MainWindow()
         {
             InitializeComponent();
-			playSongBg();
+			//playSongBg();
 
             // scroll auto
             dispatcherTimerScroll.Tick += ScrollAuto;
